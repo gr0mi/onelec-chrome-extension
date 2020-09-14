@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Yandex Mail Extension",
+  "version": "1.0.0",
+  "author": "t.me/im0rg",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.yandex.ru/*"
+      ],
+      "js": [
+        "jquery.js",
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ]
+}
