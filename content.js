@@ -1,5 +1,6 @@
 // content.js
 $(function(){
+  console.log("onelec mail.yandex.ru extenstion started");
 	$(document).on('ready', ()=>{
 		$('.mail-Layout-Inner').append('<div id="main-Layout-Custom" class="mail-Layout-Main js-mail-layout-content">\n' +
 			'    <div class="mail-Layout-Content">\n' +
