@@ -1,15 +1,14 @@
 {
   "manifest_version": 2,
   "name": "Onelec mail.yandex.ru Extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "t.me/im0rg",
   "content_scripts": [
     {
       "matches": [
-        "https://mail.yandex.ru/*"
+        "*://mail.yandex.ru/*"
       ],
       "js": [
-        "jquery.js",
         "content.js"
       ],
       "css": [
