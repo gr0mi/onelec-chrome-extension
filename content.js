@@ -1,9 +1,9 @@
 // content.js
 
-console.debug("onelec mail.yandex.ru extenstion started");
+console.debug("OME started");
 
 const insertContent = function() {
-  console.debug("onelec mail.yandex.ru extenstion intialized");
+  console.debug("OME intialized");
   const target = document.getElementsByClassName('mail-Layout-Inner')[0]
   target.innerHTML += '<div id="main-Layout-Custom" class="mail-Layout-Main js-mail-layout-content">\n' +
     '    <div class="mail-Layout-Content">\n' +
@@ -36,9 +36,15 @@ const insertContent = function() {
     '</div>';
 };
 
+const initialize = function() {
+  insertContent();
+  const userEmail = document.getElementsByClassName('user-account__subname')[0].textContent;
+  console.debug('OME user email', userEmail)
+}
+
 const onNodeInserted = function(e) {
   if (e.target && e.target.classList && e.target.classList.contains('mail-App')) {
-    insertContent();
+    initialize();
   }
 };
 
