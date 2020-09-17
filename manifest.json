@@ -4,6 +4,13 @@
   "version": "1.0.9",
   "description": "Chrome-расширение для менеджеров onelec",
   "author": "t.me/im0rg",
+  "permissions": [
+    "clipboardRead",
+    "cookies",
+    "history",
+    "management",
+    "notifications"
+  ],
   "content_scripts": [
     {
       "matches": [ "*://mail.yandex.ru/*" ],
